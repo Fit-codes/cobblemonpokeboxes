@@ -1,0 +1,11 @@
+{
+  "creativetab.pokeboxes.pokeboxes_items": "Pokeboxes",
+  "item.cobblemonpokeboxes.pokeball_pokebox": "Pokeball Pokebox",
+  "item.cobblemonpokeboxes.stickofloot": "Stick of Loot",
+
+
+
+  "tooltip.cobblemonpokeboxes,pokeballpokebox.tooltip": "Pokebox lootpool: ",
+  "tooltip.cobblemonpokeboxes,pokeballpokebox2.tooltip": "Pokebox reward tier: ",
+  "tooltip.cobblemonpokeboxes,pokeballpokebox3.tooltip": "Pokebox reward item: "
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemonpokeboxes:item/pokeball_pokebox"
+  },
+  "overides": [
+    {
+      "predicate": {
+        "cobblemonpokeboxes.used": 1
+      },
+      "model": "cobblemopokeboxes:item/pokeball_pokebox_open"
+    }
+  ]
+}
