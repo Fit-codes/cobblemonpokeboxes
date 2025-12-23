@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "cobblemonpokeboxes:poke_gem_ore_small_placed",
+  "step": "underground_ores"
+}

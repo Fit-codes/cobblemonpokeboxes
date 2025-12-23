@@ -39,8 +39,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //                .unlockedBy("has_magic_block", has(ModBlocks.MAGIC_BLOCK))
 //                .save(recipeOutput, "tutorialmod:bismuth_from_magic_block");
 //
-        oreSmelting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_FRAGMENT.get(), 0.25f, 200, "poke_fragment");
-        oreBlasting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_FRAGMENT.get(), 0.25f, 100, "poke_fragment");
+        oreSmelting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_GEM_FRAGMENT.get(), 0.25f, 200, "poke_gem_fragment");
+        oreBlasting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_GEM_FRAGMENT.get(), 0.25f, 100, "poke_gem_fragment");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
