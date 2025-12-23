@@ -31,9 +31,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 //        // dropSelf(ModBlocks.MAGIC_BLOCK.get());
 //
         add(ModBlocks.POKE_GEM_ORE.get(),
-                block -> createOreDrop(ModBlocks.POKE_GEM_ORE.get(), ModItems.POKE_GEM.get()));
+                block -> createOreDrop(ModBlocks.POKE_GEM_ORE.get(), ModItems.POKE_FRAGMENT.get()));
         add(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(),
-                block -> createOreDrop(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(), ModItems.POKE_GEM.get()));
+                block -> createOreDrop(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(), ModItems.POKE_FRAGMENT.get()));
 
     }
 

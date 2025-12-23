@@ -35,6 +35,7 @@ public class ModLangProvider extends LanguageProvider {
         this.add(ModItems.ORIGIN_STONE.get(), "Origin Stone");
         this.add(ModItems.POKE_ESSENCE.get(), "Poke Essence");
         this.add(ModItems.POKE_GEM.get(), "Poke Gem");
+        this.add(ModItems.POKE_FRAGMENT.get(), "Poke Fragment");
         this.add(ModItems.POKE_GEM_DUST.get(), "Poke Gem Dust");
         this.add(ModItems.POKE_JEWEL.get(), "Poke Jewel");
         this.add(ModItems.REGISTONE.get(), "Registone");

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cobblemonpokeboxes:block/poke_gem_deepslate_ore"
-  }
-}

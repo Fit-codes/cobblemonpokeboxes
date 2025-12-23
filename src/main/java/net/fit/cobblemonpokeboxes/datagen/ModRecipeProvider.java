@@ -23,24 +23,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> POKE_GEM_SMELTABLES = List.of(ModItems.POKE_GEM_DUST,
                 ModBlocks.POKE_GEM_ORE, ModBlocks.POKE_GEM_DEEPSLATE_ORE);
 //
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POKE_JEWEL.get())
-                .pattern("BBB")
-                .pattern("BBB")
-                .pattern("BBB")
-                .define('B', ModItems.POKE_GEM.get())
-                .unlockedBy("has_bismuth", has(ModItems.POKE_GEM)).save(recipeOutput);
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POKE_JEWEL.get())
+//                .pattern("BBB")
+//                .pattern("BBB")
+//                .pattern("BBB")
+//                .define('B', ModItems.POKE_GEM.get())
+//                .unlockedBy("has_bismuth", has(ModItems.POKE_GEM)).save(recipeOutput);
 //
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.POKE_GEM.get(), 9)
-                .requires(ModItems.POKE_JEWEL)
-                .unlockedBy("has_poke_jewel", has(ModItems.POKE_JEWEL)).save(recipeOutput);
+//        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.POKE_GEM.get(), 9)
+//                .requires(ModItems.POKE_JEWEL)
+//                .unlockedBy("has_poke_jewel", has(ModItems.POKE_JEWEL)).save(recipeOutput);
 //
 //        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 18)
 //                .requires(ModBlocks.MAGIC_BLOCK)
 //                .unlockedBy("has_magic_block", has(ModBlocks.MAGIC_BLOCK))
 //                .save(recipeOutput, "tutorialmod:bismuth_from_magic_block");
 //
-        oreSmelting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_GEM.get(), 0.25f, 200, "poke_gem");
-        oreBlasting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_GEM.get(), 0.25f, 100, "poke_gem");
+        oreSmelting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_FRAGMENT.get(), 0.25f, 200, "poke_fragment");
+        oreBlasting(recipeOutput, POKE_GEM_SMELTABLES, RecipeCategory.MISC, ModItems.POKE_FRAGMENT.get(), 0.25f, 100, "poke_fragment");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
