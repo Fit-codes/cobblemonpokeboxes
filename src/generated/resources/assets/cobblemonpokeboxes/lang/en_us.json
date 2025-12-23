@@ -1,0 +1,23 @@
+{
+  "block.cobblemonpokeboxes.poke_gem_deepslate_ore": "Deepslate Poke Gem Ore",
+  "block.cobblemonpokeboxes.poke_gem_ore": "Poke Gem Ore",
+  "creativetab.pokeboxes.pokeboxes_items": "Pokeboxes",
+  "item.cobblemonpokeboxes.backpack_upgrader": "Backpack Upgrader",
+  "item.cobblemonpokeboxes.cosmetic_box": "Cosmetic Box",
+  "item.cobblemonpokeboxes.masterball_pokebox": "Masterball Pokebox",
+  "item.cobblemonpokeboxes.miners_and_crafters_box": "Miners & Crafters Box",
+  "item.cobblemonpokeboxes.origin_stone": "Origin Stone",
+  "item.cobblemonpokeboxes.plushie_box": "Plushie Box",
+  "item.cobblemonpokeboxes.poke_essence": "Poke Essence",
+  "item.cobblemonpokeboxes.poke_gem": "Poke Gem",
+  "item.cobblemonpokeboxes.poke_gem_dust": "Poke Gem Dust",
+  "item.cobblemonpokeboxes.poke_gem_fragment": "Poke Gem Fragment",
+  "item.cobblemonpokeboxes.poke_jewel": "Poke Jewel",
+  "item.cobblemonpokeboxes.pokeball_pokebox": "Pokeball Pokebox",
+  "item.cobblemonpokeboxes.pokedoll_pokebox": "Pokedoll Pokebox",
+  "item.cobblemonpokeboxes.pokemon_cosmetic_pokebox": "Pokemon Cosmetic Pokebox",
+  "item.cobblemonpokeboxes.registone": "Registone",
+  "item.cobblemonpokeboxes.simple_hats_box": "Simple Hats Box",
+  "item.cobblemonpokeboxes.ultraball_pokebox": "Ultraball Pokebox",
+  "tooltip.cobblemonpokeboxes,pokeballpokebox.tooltip": "Pokebox lootpool data: "
+}

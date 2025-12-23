@@ -19,7 +19,8 @@ import java.util.List;
 public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POKE_GEM_ORE_KEY = registerKey("poke_gem_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POKE_GEM_DEEPSLATE_ORE_KEY = registerKey("poke_gem_deepslate_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POKE_GEM_ORE_SMALL_KEY = registerKey("poke_gem_small_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POKE_GEM_ORE_SURFACE_KEY = registerKey("poke_gem_surface_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -30,7 +31,9 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, ModBlocks.POKE_GEM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.POKE_GEM_DEEPSLATE_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_POKE_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 8));
+        register(context, OVERWORLD_POKE_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 16, 0.75F ));
+        register(context, OVERWORLD_POKE_GEM_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 5, 0.4F ));
+        register(context, OVERWORLD_POKE_GEM_ORE_SURFACE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 4 ));
 
     }
 

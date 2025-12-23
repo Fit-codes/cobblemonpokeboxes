@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ORIGIN_STONE);
                         output.accept(ModItems.POKE_ESSENCE);
                         output.accept(ModItems.POKE_GEM);
+                        output.accept(ModItems.POKE_GEM_FRAGMENT);
                         output.accept(ModItems.POKE_GEM_DUST);
                         output.accept(ModItems.POKE_JEWEL);
                         output.accept(ModItems.REGISTONE);
