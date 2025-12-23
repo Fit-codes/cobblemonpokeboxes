@@ -30,7 +30,7 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, ModBlocks.POKE_GEM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.POKE_GEM_DEEPSLATE_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_POKE_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 5));
+        register(context, OVERWORLD_POKE_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 8));
 
     }
 

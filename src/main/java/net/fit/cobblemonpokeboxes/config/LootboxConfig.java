@@ -20,7 +20,7 @@ public class LootboxConfig {
     private final List<ModConfigSpec.ConfigValue<List<? extends String>>> TIER_LOOTPOOL = new ArrayList<>();
 
     public LootboxConfig(int lootboxnumber){
-        System.out.println("Constructing lootbox " + lootboxnumber);
+        //System.out.println("Constructing lootbox " + lootboxnumber);
         LOOTBOXNUMBER = lootboxnumber;
 
         BUILDER.push("lootbox");

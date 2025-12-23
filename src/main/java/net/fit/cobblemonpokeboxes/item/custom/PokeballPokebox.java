@@ -55,8 +55,8 @@ public class PokeballPokebox extends Item {
 
             //Assigns defualt lootpool if there is none.
             if(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL) == null)
-                itemstack.set(ModComponentTypes.POKEBOXLOOTPOOL, 2);
-            System.out.println("Interacted lootbox number: " + itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
+                itemstack.set(ModComponentTypes.POKEBOXLOOTPOOL, 1);
+            //System.out.println("Interacted lootbox number: " + itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
             //Constructs the lootpool for this pokebox
             //TODO NOT NEEDED
             lootpool = new PokeboxLootpool(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
@@ -95,12 +95,12 @@ public class PokeballPokebox extends Item {
             tooltipComponents.add(Component.translatable("tooltip.cobblemonpokeboxes,pokeballpokebox.tooltip"));
             if(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL) != null)
                 tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL)));
-            tooltipComponents.add(Component.translatable("tooltip.cobblemonpokeboxes,pokeballpokebox2.tooltip"));
-            if(itemstack.get(ModComponentTypes.POKEBOXREWARDTIER) != null)
-                tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXREWARDTIER)));
-            tooltipComponents.add(Component.translatable("tooltip.cobblemonpokeboxes,pokeballpokebox3.tooltip"));
-            if(itemstack.get(ModComponentTypes.POKEBOXREWARD) != null)
-                tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXREWARD)));
+//            tooltipComponents.add(Component.translatable("tooltip.cobblemonpokeboxes,pokeballpokebox2.tooltip"));
+//            if(itemstack.get(ModComponentTypes.POKEBOXREWARDTIER) != null)
+//                tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXREWARDTIER)));
+//            tooltipComponents.add(Component.translatable("tooltip.cobblemonpokeboxes,pokeballpokebox3.tooltip"));
+//            if(itemstack.get(ModComponentTypes.POKEBOXREWARD) != null)
+//                tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXREWARD)));
         }
         super.appendHoverText(itemstack, context, tooltipComponents, tooltipFlag);
     }

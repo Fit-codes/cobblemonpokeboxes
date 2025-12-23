@@ -21,12 +21,22 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.pokeboxes.pokeboxes_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.POKEBALL_POKEBOX);
+                        output.accept(ModItems.ULTRABALL_POKEBOX);
+                        output.accept(ModItems.MASTERBALL_POKEBOX);
+                        output.accept(ModItems.MINERS_AND_CRAFTERS_BOX);
+                        output.accept(ModItems.COSMETIC_BOX);
+                        output.accept(ModItems.SIMPLE_HATS_BOX);
+                        output.accept(ModItems.POKEMON_COSMETIC_POKEBOX);
+                        output.accept(ModItems.POKEDOLL_POKEBOX);
+                        output.accept(ModItems.PLUSHIE_BOX);
+
                         output.accept(ModItems.ORIGIN_STONE);
                         output.accept(ModItems.POKE_ESSENCE);
                         output.accept(ModItems.POKE_GEM);
                         output.accept(ModItems.POKE_GEM_DUST);
                         output.accept(ModItems.POKE_JEWEL);
                         output.accept(ModItems.REGISTONE);
+                        output.accept(ModItems.BACKPACK_UPGRADER);
                         output.accept(ModBlocks.POKE_GEM_ORE);
                         output.accept(ModBlocks.POKE_GEM_DEEPSLATE_ORE);
                     }).build());

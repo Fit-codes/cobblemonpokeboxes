@@ -34,7 +34,7 @@ public class ConfigManager {
         //Looks through the config folder and registers all lootbox config files that are there.
         for(int i = 1; Files.exists(Paths.get( "config/"+ MODID + "/lootbox"+ i + "-server.toml")); i++ ) {
             if(!(initialized && i == 1)) {
-                System.out.println("Reading config " + i);
+                //System.out.println("Reading config " + i);
                 lootboxConfigList.add(new LootboxConfig(i));
                 modContainer.registerConfig(ModConfig.Type.SERVER, lootboxConfigList.get(i-1).getSpec(),MODID + "/lootbox" + i + "-server.toml");
             }
@@ -46,16 +46,16 @@ public class ConfigManager {
     public static LootboxConfig getLootboxConfig(int lootboxnumber){
         return lootboxConfigList.get(lootboxnumber - 1);
     }
-    public static void lootgoxdebug(){
-        System.out.println("+---------------Lootbox debug-----------------+");
-        System.out.println("Number of registed lootboxes: " + lootboxConfigList.size());
-        for(int i = 0; i < lootboxConfigList.size(); i++){
-            System.out.println("Lootboxasdasdsdfsd");
-            System.out.println("Lootbox name: " + lootboxConfigList.get(i).getName());
-            System.out.println("Lootbox number: " + lootboxConfigList.get(i).getLootboxNumber());
-        }
-        System.out.println("+---------------------------------------------+");
-    }
+    //public static void lootgoxdebug(){
+        //System.out.println("+---------------Lootbox debug-----------------+");
+        //System.out.println("Number of registed lootboxes: " + lootboxConfigList.size());
+        //for(int i = 0; i < lootboxConfigList.size(); i++){
+            //System.out.println("Lootboxasdasdsdfsd");
+            //System.out.println("Lootbox name: " + lootboxConfigList.get(i).getName());
+            //System.out.println("Lootbox number: " + lootboxConfigList.get(i).getLootboxNumber());
+        //}
+        //System.out.println("+---------------------------------------------+");
+    //}
 
 
 //        LootboxConfig config = new Config();
