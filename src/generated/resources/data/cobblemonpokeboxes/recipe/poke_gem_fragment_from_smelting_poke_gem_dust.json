@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "poke_gem_fragment",
+  "ingredient": {
+    "item": "cobblemonpokeboxes:poke_gem_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "cobblemonpokeboxes:poke_gem_fragment"
+  }
+}

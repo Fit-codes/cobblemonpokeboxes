@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemonpokeboxes:item/pokemon_cosmetic_pokebox"
+  }
+}

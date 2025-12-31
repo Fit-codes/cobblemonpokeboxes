@@ -17,13 +17,20 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> POKE_GEM_ORE_PLACED_KEY = registerKey("poke_gem_ore_placed");
+    public static final ResourceKey<PlacedFeature> POKE_GEM_ORE_PLACED_SMALL_KEY = registerKey("poke_gem_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> POKE_GEM_ORE_PLACED_SURFACE_KEY = registerKey("poke_gem_ore_surface_placed");
 
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, POKE_GEM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POKE_GEM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
+                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));
+        register(context, POKE_GEM_ORE_PLACED_SMALL_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POKE_GEM_ORE_SMALL_KEY),
+                ModOrePlacement.commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));
+        register(context, POKE_GEM_ORE_PLACED_SURFACE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POKE_GEM_ORE_SURFACE_KEY),
+                ModOrePlacement.commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(384))));
+
 
     }
 

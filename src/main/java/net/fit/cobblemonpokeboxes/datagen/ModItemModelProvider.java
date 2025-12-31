@@ -27,6 +27,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ORIGIN_STONE.get());
         basicItem(ModItems.POKE_ESSENCE.get());
         basicItem(ModItems.POKE_GEM.get());
+        basicItem(ModItems.POKE_GEM_FRAGMENT.get());
         basicItem(ModItems.POKE_GEM_DUST.get());
         basicItem(ModItems.POKE_JEWEL.get());
         basicItem(ModItems.REGISTONE.get());

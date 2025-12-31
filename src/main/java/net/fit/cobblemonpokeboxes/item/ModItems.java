@@ -39,6 +39,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POKE_GEM = ITEMS.register("poke_gem",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POKE_GEM_FRAGMENT = ITEMS.register("poke_gem_fragment",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POKE_GEM_DUST = ITEMS.register("poke_gem_dust",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POKE_JEWEL = ITEMS.register("poke_jewel",

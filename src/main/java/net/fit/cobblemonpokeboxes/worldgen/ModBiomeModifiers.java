@@ -14,6 +14,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_POKE_GEM_ORE = registerKey("add_poke_gem_ore");
+    public static final ResourceKey<BiomeModifier> ADD_POKE_GEM_SMALL_ORE = registerKey("add_poke_gem_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_POKE_GEM_SURFACE_ORE = registerKey("add_poke_gem_surface_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
@@ -24,6 +26,14 @@ public class ModBiomeModifiers {
         context.register(ADD_POKE_GEM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.POKE_GEM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_POKE_GEM_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.POKE_GEM_ORE_PLACED_SMALL_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_POKE_GEM_SURFACE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.POKE_GEM_ORE_PLACED_SURFACE_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 
