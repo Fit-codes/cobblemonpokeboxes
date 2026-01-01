@@ -1,0 +1,74 @@
+{
+  "name": "Pokemon Cosmetics Pokebox",
+  "item_id": "pokemon_cosmetic_pokebox",
+  "tiers": [
+    {
+      "weight": 500,
+      "color": "none",
+      "items": [
+        {
+          "item": "minecraft:snowball",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "weight": 4,
+      "color": "green",
+      "items": [
+        {
+          "item": "minecraft:coal",
+          "count": 4
+        },
+        {
+          "item": "minecraft:apple",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 3,
+      "color": "blue",
+      "items": [
+        {
+          "item": "minecraft:iron_ingot",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "weight": 2,
+      "color": "purple",
+      "items": [
+        {
+          "item": "minecraft:diamond",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 1,
+      "color": "red",
+      "items": [
+        {
+          "item": "minecraft:nether_star",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 0,
+      "color": "yellow",
+      "items": [
+        {
+          "item": "minecraft:coal",
+          "count": 4
+        },
+        {
+          "item": "minecraft:apple",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

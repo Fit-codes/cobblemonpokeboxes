@@ -14,9 +14,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> POKEBALL_POKEBOX = ITEMS.register("pokeball_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 1)));
-    public static final DeferredItem<Item> ULTRABALL_POKEBOX = ITEMS.register("ultraball_pokebox",
+    public static final DeferredItem<Item> GREATBALL_POKEBOX = ITEMS.register("greatball_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 2)));
-    public static final DeferredItem<Item> MASTERBALL_POKEBOX = ITEMS.register("masterball_pokebox",
+    public static final DeferredItem<Item> ULTRABALL_POKEBOX = ITEMS.register("ultraball_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 3)));
     public static final DeferredItem<Item> MINERS_AND_CRAFTERS_BOX = ITEMS.register("miners_and_crafters_box",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 4)));

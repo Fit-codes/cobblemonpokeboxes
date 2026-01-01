@@ -74,7 +74,22 @@ public class PokeballPokebox extends Item {
             itemstack.consume(1, player);
 //            ((ServerLevel) level).sendParticles(ParticleTypes.DUST_COLOR_TRANSITION,
 //                player.getX(), player.getY(), player.getZ(), 5, 0 , 0 ,0, 0);
-            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(lootpool.getReward(itemstack.get(ModComponentTypes.POKEBOXREWARDTIER), itemstack.get(ModComponentTypes.POKEBOXREWARD)), lootpool.getAmount(itemstack.get(ModComponentTypes.POKEBOXREWARDTIER), itemstack.get(ModComponentTypes.POKEBOXREWARD))));
+            int tier = itemstack.get(ModComponentTypes.POKEBOXREWARDTIER);
+            int reward = itemstack.get(ModComponentTypes.POKEBOXREWARD);
+            Item rewardItem = lootpool.getReward(tier, reward);
+            int amount = lootpool.getAmount(tier, reward);
+            String tierColor = lootpool.getTierColor(tier);
+
+            // Send chat message with tier color
+            net.minecraft.network.chat.MutableComponent message = Component.literal("Opened ")
+                .append(Component.literal(lootpool.name).withStyle(net.minecraft.ChatFormatting.GOLD))
+                .append(Component.literal(" and received "))
+                .append(Component.translatable(rewardItem.getDescriptionId()).withStyle(getTierChatColor(tierColor)))
+                .append(Component.literal(" x" + amount).withStyle(getTierChatColor(tierColor)));
+
+            player.sendSystemMessage(message);
+
+            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(rewardItem, amount));
         }
 
 
@@ -103,5 +118,17 @@ public class PokeballPokebox extends Item {
 //                tooltipComponents.add(Component.literal(""+ itemstack.get(ModComponentTypes.POKEBOXREWARD)));
         }
         super.appendHoverText(itemstack, context, tooltipComponents, tooltipFlag);
+    }
+
+    private net.minecraft.ChatFormatting getTierChatColor(String tierColor) {
+        return switch (tierColor.toLowerCase()) {
+            case "green" -> net.minecraft.ChatFormatting.GREEN;
+            case "blue" -> net.minecraft.ChatFormatting.BLUE;
+            case "purple" -> net.minecraft.ChatFormatting.LIGHT_PURPLE;
+            case "red" -> net.minecraft.ChatFormatting.RED;
+            case "yellow" -> net.minecraft.ChatFormatting.YELLOW;
+            case "gold" -> net.minecraft.ChatFormatting.GOLD;
+            default -> net.minecraft.ChatFormatting.GRAY; // "none" or unknown
+        };
     }
 }

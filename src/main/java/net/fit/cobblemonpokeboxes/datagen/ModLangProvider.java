@@ -21,8 +21,8 @@ public class ModLangProvider extends LanguageProvider {
         this.add("creativetab.pokeboxes.pokeboxes_items", "Pokeboxes");
         //Item translations.
         this.add(ModItems.POKEBALL_POKEBOX.get(), "Pokeball Pokebox");
+        this.add(ModItems.GREATBALL_POKEBOX.get(), "Greatball Pokebox");
         this.add(ModItems.ULTRABALL_POKEBOX.get(), "Ultraball Pokebox");
-        this.add(ModItems.MASTERBALL_POKEBOX.get(), "Masterball Pokebox");
         this.add(ModItems.MINERS_AND_CRAFTERS_BOX.get(), "Miners & Crafters Box");
         this.add(ModItems.COSMETIC_BOX.get(), "Cosmetic Box");
         this.add(ModItems.SIMPLE_HATS_BOX.get(), "Simple Hats Box");
