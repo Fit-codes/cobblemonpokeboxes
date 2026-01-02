@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.pokeboxes.pokeboxes_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.POKEBALL_POKEBOX);
+                        output.accept(ModItems.GREATBALL_POKEBOX);
                         output.accept(ModItems.ULTRABALL_POKEBOX);
                         output.accept(ModItems.MASTERBALL_POKEBOX);
                         output.accept(ModItems.MINERS_AND_CRAFTERS_BOX);
@@ -39,7 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.REGISTONE);
                         output.accept(ModItems.BACKPACK_UPGRADER);
                         output.accept(ModBlocks.POKE_GEM_ORE);
-                        output.accept(ModBlocks.POKE_GEM_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_POKE_GEM_ORE);
                     }).build());
 
     public static void register(IEventBus eventBus){

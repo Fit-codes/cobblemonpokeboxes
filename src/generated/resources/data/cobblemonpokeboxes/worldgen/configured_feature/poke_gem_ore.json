@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "cobblemonpokeboxes:poke_gem_deepslate_ore"
+          "Name": "cobblemonpokeboxes:deepslate_poke_gem_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

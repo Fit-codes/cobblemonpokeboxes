@@ -29,7 +29,7 @@ public class ModPlacedFeatures {
         register(context, POKE_GEM_ORE_PLACED_SMALL_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POKE_GEM_ORE_SMALL_KEY),
                 ModOrePlacement.commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));
         register(context, POKE_GEM_ORE_PLACED_SURFACE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POKE_GEM_ORE_SURFACE_KEY),
-                ModOrePlacement.commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(384))));
+                ModOrePlacement.commonOrePlacement(20, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(384))));
 
 
     }

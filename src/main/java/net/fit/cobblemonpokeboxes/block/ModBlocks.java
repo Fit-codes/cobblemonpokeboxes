@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POKE_GEM_ORE = registerBlock("poke_gem_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> POKE_GEM_DEEPSLATE_ORE = registerBlock("poke_gem_deepslate_ore",
+    public static final DeferredBlock<Block> DEEPSLATE_POKE_GEM_ORE = registerBlock("deepslate_poke_gem_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 

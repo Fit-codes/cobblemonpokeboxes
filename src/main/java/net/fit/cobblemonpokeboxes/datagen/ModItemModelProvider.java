@@ -16,6 +16,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //basicItem(ModItems.POKEBALL_POKEBOX.get());
         basicItem(ModItems.ULTRABALL_POKEBOX.get());
+        basicItem(ModItems.GREATBALL_POKEBOX.get());
         basicItem(ModItems.MASTERBALL_POKEBOX.get());
         basicItem(ModItems.MINERS_AND_CRAFTERS_BOX.get());
         basicItem(ModItems.COSMETIC_BOX.get());

@@ -1,9 +1,10 @@
 {
-  "block.cobblemonpokeboxes.poke_gem_deepslate_ore": "Deepslate Poke Gem Ore",
+  "block.cobblemonpokeboxes.deepslate_poke_gem_ore": "Deepslate Poke Gem Ore",
   "block.cobblemonpokeboxes.poke_gem_ore": "Poke Gem Ore",
   "creativetab.pokeboxes.pokeboxes_items": "Pokeboxes",
   "item.cobblemonpokeboxes.backpack_upgrader": "Backpack Upgrader",
   "item.cobblemonpokeboxes.cosmetic_box": "Cosmetic Box",
+  "item.cobblemonpokeboxes.greatball_pokebox": "Greatball Pokebox",
   "item.cobblemonpokeboxes.masterball_pokebox": "Masterball Pokebox",
   "item.cobblemonpokeboxes.miners_and_crafters_box": "Miners & Crafters Box",
   "item.cobblemonpokeboxes.origin_stone": "Origin Stone",
