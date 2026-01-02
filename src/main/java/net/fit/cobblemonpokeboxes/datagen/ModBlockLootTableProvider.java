@@ -1,6 +1,5 @@
 package net.fit.cobblemonpokeboxes.datagen;
 
-import net.fit.cobblemonpokeboxes.CobblemonPokeboxes;
 import net.fit.cobblemonpokeboxes.block.ModBlocks;
 import net.fit.cobblemonpokeboxes.item.ModItems;
 import net.minecraft.core.Holder;
@@ -32,8 +31,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 //
         add(ModBlocks.POKE_GEM_ORE.get(),
                 block -> createOreDrop(ModBlocks.POKE_GEM_ORE.get(), ModItems.POKE_GEM_FRAGMENT.get()));
-        add(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(),
-                block -> createOreDrop(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(), ModItems.POKE_GEM_FRAGMENT.get()));
+        add(ModBlocks.DEEPSLATE_POKE_GEM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_POKE_GEM_ORE.get(), ModItems.POKE_GEM_FRAGMENT.get()));
 
     }
 

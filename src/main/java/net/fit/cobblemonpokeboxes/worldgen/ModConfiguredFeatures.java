@@ -29,11 +29,11 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldPokeGemOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.POKE_GEM_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.POKE_GEM_DEEPSLATE_ORE.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_POKE_GEM_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_POKE_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 16, 0.75F ));
-        register(context, OVERWORLD_POKE_GEM_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 5, 0.4F ));
-        register(context, OVERWORLD_POKE_GEM_ORE_SURFACE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 4 ));
+        register(context, OVERWORLD_POKE_GEM_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 7, 0.3F ));
+        register(context, OVERWORLD_POKE_GEM_ORE_SURFACE_KEY, Feature.ORE, new OreConfiguration(overworldPokeGemOres, 7 ));
 
     }
 
