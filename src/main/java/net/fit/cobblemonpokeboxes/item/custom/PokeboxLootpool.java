@@ -96,7 +96,26 @@ public class PokeboxLootpool {
         System.out.println("+---------------------------------------------+");
     }
 
-    public void rollReward(ItemStack itemstack) {
+    /**
+     * Represents the result of rolling a reward from the loot pool.
+     */
+    public static class RewardRoll {
+        public final int tier;
+        public final int itemIndex;
+        public final Item item;
+        public final int amount;
+        public final String tierColor;
+
+        public RewardRoll(int tier, int itemIndex, Item item, int amount, String tierColor) {
+            this.tier = tier;
+            this.itemIndex = itemIndex;
+            this.item = item;
+            this.amount = amount;
+            this.tierColor = tierColor;
+        }
+    }
+
+    public RewardRoll rollReward() {
         int rolleditemindex = 0;
         int rolledtier = 0;
 
@@ -117,9 +136,14 @@ public class PokeboxLootpool {
         System.out.println("[Pokebox Roll] Selected Tier " + rolledtier + " (" + color.get(rolledtier - 1) + ")");
         rolleditemindex = (int) (Math.random() * (lootpool.get(rolledtier - 1).size()));
 
-        // Sets the box properties to what reward it rolled
-        itemstack.set(ModComponentTypes.POKEBOXREWARDTIER.get(), rolledtier);
-        itemstack.set(ModComponentTypes.POKEBOXREWARD.get(), rolleditemindex);
+        // Return the reward information directly instead of storing in itemstack
+        Item rewardItem = getReward(rolledtier, rolleditemindex);
+        int amount = getAmount(rolledtier, rolleditemindex);
+        String tierColor = getTierColor(rolledtier);
+
+        System.out.println("[Pokebox Roll] Rolled: " + rewardItem.getDescriptionId() + " x" + amount + " (Tier " + rolledtier + ")");
+
+        return new RewardRoll(rolledtier, rolleditemindex, rewardItem, amount, tierColor);
     }
 
     public Item getReward(int tier, int itemindex) {

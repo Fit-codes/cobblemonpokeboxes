@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "poke_gem_fragment",
+  "ingredient": {
+    "item": "cobblemonpokeboxes:deepslate_poke_gem_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "cobblemonpokeboxes:poke_gem_fragment"
+  }
+}

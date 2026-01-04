@@ -32,7 +32,7 @@ public class PokeballPokebox extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        PokeboxLootpool lootpool = null;
+
         //Play sound and start animation.
         if(level.isClientSide){
             //plays a chest opening sound around the player
@@ -48,57 +48,33 @@ public class PokeballPokebox extends Item {
             );
         }
 
-        //Get what item the Pokebox rolls.
+        //Roll reward and give player the item (server-side only)
         if (!level.isClientSide) {
-            //ConfigManager.lootgoxdebug();
-            //System.out.println("PokeballPokebox InteractionResultHolder is being run on the server!");
-
-            //Assigns defualt lootpool if there is none.
+            //Assigns default lootpool if there is none.
             if(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL) == null)
                 itemstack.set(ModComponentTypes.POKEBOXLOOTPOOL, 1);
-            //System.out.println("Interacted lootbox number: " + itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
+
             //Constructs the lootpool for this pokebox
-            //TODO NOT NEEDED
-            lootpool = new PokeboxLootpool(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
-            lootpool.rollReward(itemstack);
-        }
+            PokeboxLootpool lootpool = new PokeboxLootpool(itemstack.get(ModComponentTypes.POKEBOXLOOTPOOL.get()));
 
-        //finish animation
-        if(level.isClientSide){
+            //Roll the reward - this now returns the reward data directly
+            PokeboxLootpool.RewardRoll reward = lootpool.rollReward();
 
-            //try catch to make sure the itemstack data matches server
-        }
-
-        //give player rolled item
-        if (!level.isClientSide) {
+            //Consume the pokebox item AFTER we have the reward data
             itemstack.consume(1, player);
-//            ((ServerLevel) level).sendParticles(ParticleTypes.DUST_COLOR_TRANSITION,
-//                player.getX(), player.getY(), player.getZ(), 5, 0 , 0 ,0, 0);
-            int tier = itemstack.get(ModComponentTypes.POKEBOXREWARDTIER);
-            int reward = itemstack.get(ModComponentTypes.POKEBOXREWARD);
-            Item rewardItem = lootpool.getReward(tier, reward);
-            int amount = lootpool.getAmount(tier, reward);
-            String tierColor = lootpool.getTierColor(tier);
 
             // Send chat message with tier color
             net.minecraft.network.chat.MutableComponent message = Component.literal("Opened ")
                 .append(Component.literal(lootpool.name).withStyle(net.minecraft.ChatFormatting.GOLD))
                 .append(Component.literal(" and received "))
-                .append(Component.translatable(rewardItem.getDescriptionId()).withStyle(getTierChatColor(tierColor)))
-                .append(Component.literal(" x" + amount).withStyle(getTierChatColor(tierColor)));
+                .append(Component.translatable(reward.item.getDescriptionId()).withStyle(getTierChatColor(reward.tierColor)))
+                .append(Component.literal(" x" + reward.amount).withStyle(getTierChatColor(reward.tierColor)));
 
             player.sendSystemMessage(message);
 
-            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(rewardItem, amount));
+            //Give the player the reward item
+            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(reward.item, reward.amount));
         }
-
-
-        if (!level.isClientSide) {
-
-        }
-
-        //testing
-
 
         player.awardStat(Stats.ITEM_USED.get(this));
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
