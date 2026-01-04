@@ -23,7 +23,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.POKEBALL_POKEBOX);
                         output.accept(ModItems.GREATBALL_POKEBOX);
                         output.accept(ModItems.ULTRABALL_POKEBOX);
-                        output.accept(ModItems.MASTERBALL_POKEBOX);
                         output.accept(ModItems.MINERS_AND_CRAFTERS_BOX);
                         output.accept(ModItems.COSMETIC_BOX);
                         output.accept(ModItems.SIMPLE_HATS_BOX);

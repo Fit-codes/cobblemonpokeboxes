@@ -1,0 +1,902 @@
+{
+  "name": "Greataball Pokebox",
+  "item_id": "greatball_pokebox",
+  "tiers": [
+    {
+      "weight": 0,
+      "color": "none",
+      "items": [
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:premier_ball",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:great_ball",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:ether",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:super_potion",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:full_heal",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:revive",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:oran_berry",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:exp_candy_xs",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:exp_candy_s",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:ether",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:revive",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:oran_berry",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:exp_candy_xs",
+          "count": 4
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem_fragment",
+          "count": 2
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem_fragment",
+          "count": 2
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem_fragment",
+          "count": 3
+        },
+        {
+          "item": "cobblemon_utility:commoncandy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 59,
+      "color": "green",
+      "items": [
+        {
+          "item": "cobblemon:ultra_ball",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 5
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:hp_up",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:protein",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:iron",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:calcium",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:zinc",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:carbos",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:fire_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:water_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:thunder_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:leaf_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:moon_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:sun_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:shiny_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:dusk_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:dawn_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ice_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 2
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:hyper_potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:exp_candy_s",
+          "count": 4
+        },
+        {
+          "item": "cobblemon_utility:poketreat",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ultra_ball",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 5
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:hp_up",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:protein",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:iron",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:calcium",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:zinc",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:carbos",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:fire_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:water_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:thunder_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:leaf_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:moon_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:sun_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:shiny_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:dusk_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:dawn_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ice_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 2
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:hyper_potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:exp_candy_s",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:poketreat",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:absorb_bulb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:binding_band",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:black_belt",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:black_glasses",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:black_sludge",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:bright_powder",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:charcoal_stick",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:dragon_fang",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:fairy_feather",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:float_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:hard_stone",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:iron_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:kings_rock",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:light_clay",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:magnet",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:metal_coat",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:metal_powder",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:metronome",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:miracle_seed",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:mystic_water",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:never_melt_ice",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:poison_barb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:protective_pads",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:punching_glove",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:quick_claw",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:quick_powder",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:razor_claw",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:razor_fang",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:scope_lens",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:sharp_beak",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:shed_shell",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:silk_scarf",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:silver_powder",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:soft_sand",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:spell_tag",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:twisted_spoon",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:utility_umbrella",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:wide_lens",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:wise_glasses",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:zoom_lens",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:electric_seed",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:grassy_seed",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:misty_seed",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:psychic_seed",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 27,
+      "color": "blue",
+      "items": [
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 12
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:max_potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:full_restore",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_ether",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_revive",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 4
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 5
+        },
+        {
+          "item": "cobblemon:relic_coin",
+          "count": 12
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:full_restore",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_ether",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_revive",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 4
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 5
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "count": 3
+        },
+        {
+          "item": "cobblemon:max_potion",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:full_restore",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_ether",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:max_revive",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 4
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 5
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_jewel",
+          "count": 1
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 4
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_gem",
+          "count": 5
+        },
+        {
+          "item": "cobblemonpokeboxes:poke_jewel",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:ability_shield",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:air_balloon",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:blunder_policy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:cell_battery",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:covert_cloak",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:damp_rock",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:eject_button",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:eject_pack",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:eviolite",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:expert_belt",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:flame_orb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:heat_rock",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:heavy_duty_boots",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:icy_rock",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:light_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:loaded_dice",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:muscle_band",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:red_card",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ring_target",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:rocky_helmet",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:room_service",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:safety_goggles",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:shell_bell",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:smooth_rock",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:soothe_bell",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:sticky_barb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:terrain_extender",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:throat_spray",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:toxic_orb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:weakness_policy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 10,
+      "color": "purple",
+      "items": [
+        {
+          "item": "cobblemonpokeboxes:greatball_pokebox",
+          "count": 3
+        },
+        {
+          "item": "cobblemonpokeboxes:ultraball_pokebox",
+          "count": 2
+        },
+        {
+          "item": "cobblemon:assault_vest",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:choice_band",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:choice_scarf",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:choice_specs",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:focus_band",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:focus_sash",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:leftovers",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:life_orb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:beast_ball",
+          "count": 4
+        },
+        {
+          "item": "cobblemon:dream_ball",
+          "count": 4
+        },
+        {
+          "item": "cobblemon_utility:woodencap",
+          "count": 1
+        },
+        {
+          "item": "mega_showdown:mega_stone",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 3,
+      "color": "red",
+      "items": [
+        {
+          "item": "cobblemon:ability_capsule",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:health_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:mighty_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:tough_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:smart_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:courage_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:quick_candy",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:transmutationorb",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:devolutionrelic",
+          "count": 1
+        },
+        {
+          "item": "cobblemonsizevariation:shrink_essence",
+          "count": 1
+        },
+        {
+          "item": "cobblemonsizevariation:growth_essence",
+          "count": 1
+        },
+        {
+          "item": "mega_showdown:keystone",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "weight": 1,
+      "color": "yellow",
+      "items": [
+        {
+          "item": "cobblemon:ability_patch",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:master_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ancient_origin_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:master_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon:ancient_origin_ball",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:atksilvercap",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:spatksilvercap",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:spdefsilvercap",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:defsilvercap",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:speedsilvercap",
+          "count": 1
+        },
+        {
+          "item": "cobblemon_utility:hpsilvercap",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

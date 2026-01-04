@@ -5,6 +5,7 @@ import net.fit.cobblemonpokeboxes.component.ModComponentTypes;
 import net.fit.cobblemonpokeboxes.config.ConfigManager;
 import net.fit.cobblemonpokeboxes.item.ModCreativeModeTabs;
 import net.fit.cobblemonpokeboxes.item.ModItems;
+import net.fit.cobblemonpokeboxes.loot.PokeboxLootpoolManager;
 import net.fit.cobblemonpokeboxes.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -20,6 +21,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
@@ -30,7 +32,7 @@ import java.nio.file.Paths;
 @Mod(CobblemonPokeboxes.MODID)
 public class CobblemonPokeboxes {
     public static final String MODID = "cobblemonpokeboxes";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static ConfigManager CONFIG;
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -85,6 +87,12 @@ public class CobblemonPokeboxes {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
+    }
+
+    @SubscribeEvent
+    public void onAddReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(new PokeboxLootpoolManager());
+        LOGGER.info("Registered pokebox loot pool datapack listener");
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

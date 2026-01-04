@@ -1,8 +1,6 @@
-package net.fit.cobblemonpokeboxes.item.custom;
+package net.fit.cobblemonpokeboxes.loot;
 
 import net.fit.cobblemonpokeboxes.component.ModComponentTypes;
-import net.fit.cobblemonpokeboxes.loot.PokeboxLootpoolData;
-import net.fit.cobblemonpokeboxes.loot.PokeboxLootpoolManager;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,14 +14,14 @@ import java.util.List;
  * Datapack-compatible version of PokeboxLootpool.
  * Loads loot pool data from JSON files instead of config files.
  */
-public class PokeboxLootpool {
-    public String name;
+public class PokeboxLootpoolNew {
+    String name;
     String itemID;
     List<Pair<Integer, Integer>> weightrange;
     List<String> color;
     List<ArrayList<Pair<Item, Integer>>> lootpool;
 
-    public PokeboxLootpool(int lootpoolnumber) {
+    public PokeboxLootpoolNew(int lootpoolnumber) {
         // Load from datapack instead of config
         PokeboxLootpoolData data = PokeboxLootpoolManager.getLootpool(lootpoolnumber);
 
@@ -89,10 +87,6 @@ public class PokeboxLootpool {
 
         System.out.println("+---------------------------------------------+");
         System.out.println("Loaded loot pool from datapack: " + name + " (ID: " + itemID + ")");
-        System.out.println("Tier weights:");
-        for (int i = 0; i < weightrange.size(); i++) {
-            System.out.println("  Tier " + (i + 1) + " (" + color.get(i) + "): " + weightrange.get(i).getA() + "-" + weightrange.get(i).getB());
-        }
         System.out.println("+---------------------------------------------+");
     }
 
@@ -103,7 +97,6 @@ public class PokeboxLootpool {
         for (int i = weightrange.size(); !(i == 0); i--) {
             if (!(weightrange.get(i - 1).getB() == 0)) {
                 int rollednum = ((int) ((Math.random() * (weightrange.get(i - 1).getB()))) + 1);
-                System.out.println("[Pokebox Roll] Random number: " + rollednum + " (out of " + weightrange.get(i - 1).getB() + ")");
                 for (int x = 0; x < weightrange.size(); x++) {
                     if (rollednum <= weightrange.get(x).getB()) {
                         rolledtier = x + 1;
@@ -114,7 +107,6 @@ public class PokeboxLootpool {
             }
         }
 
-        System.out.println("[Pokebox Roll] Selected Tier " + rolledtier + " (" + color.get(rolledtier - 1) + ")");
         rolleditemindex = (int) (Math.random() * (lootpool.get(rolledtier - 1).size()));
 
         // Sets the box properties to what reward it rolled
