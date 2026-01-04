@@ -18,18 +18,20 @@ public class ModItems {
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 2)));
     public static final DeferredItem<Item> ULTRABALL_POKEBOX = ITEMS.register("ultraball_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 3)));
-    public static final DeferredItem<Item> MINERS_AND_CRAFTERS_BOX = ITEMS.register("miners_and_crafters_box",
+    public static final DeferredItem<Item> MASTERBALL_POKEBOX = ITEMS.register("masterball_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 4)));
-    public static final DeferredItem<Item> COSMETIC_BOX = ITEMS.register("cosmetic_box",
+    public static final DeferredItem<Item> MINERS_AND_CRAFTERS_BOX = ITEMS.register("miners_and_crafters_box",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 5)));
-    public static final DeferredItem<Item> SIMPLE_HATS_BOX = ITEMS.register("simple_hats_box",
+    public static final DeferredItem<Item> COSMETIC_BOX = ITEMS.register("cosmetic_box",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 6)));
-    public static final DeferredItem<Item> POKEMON_COSMETIC_POKEBOX = ITEMS.register("pokemon_cosmetic_pokebox",
+    public static final DeferredItem<Item> SIMPLE_HATS_BOX = ITEMS.register("simple_hats_box",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 7)));
-    public static final DeferredItem<Item> POKEDOLL_POKEBOX = ITEMS.register("pokedoll_pokebox",
+    public static final DeferredItem<Item> POKEMON_COSMETIC_POKEBOX = ITEMS.register("pokemon_cosmetic_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 8)));
-    public static final DeferredItem<Item> PLUSHIE_BOX = ITEMS.register("plushie_box",
+    public static final DeferredItem<Item> POKEDOLL_POKEBOX = ITEMS.register("pokedoll_pokebox",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 9)));
+    public static final DeferredItem<Item> PLUSHIE_BOX = ITEMS.register("plushie_box",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 10)));
 
 
     //Pokegem registeries

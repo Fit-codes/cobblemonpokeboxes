@@ -21,10 +21,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.POKE_GEM_ORE.get())
-                .add(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_POKE_GEM_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_POKE_GEM_ORE.get());
 
     }
 }

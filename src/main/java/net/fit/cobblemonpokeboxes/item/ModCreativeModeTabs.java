@@ -39,7 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.REGISTONE);
                         output.accept(ModItems.BACKPACK_UPGRADER);
                         output.accept(ModBlocks.POKE_GEM_ORE);
-                        output.accept(ModBlocks.POKE_GEM_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_POKE_GEM_ORE);
                     }).build());
 
     public static void register(IEventBus eventBus){

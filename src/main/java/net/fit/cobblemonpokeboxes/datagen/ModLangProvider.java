@@ -2,12 +2,8 @@ package net.fit.cobblemonpokeboxes.datagen;
 
 import net.fit.cobblemonpokeboxes.CobblemonPokeboxes;
 import net.fit.cobblemonpokeboxes.block.ModBlocks;
-import net.fit.cobblemonpokeboxes.item.ModCreativeModeTabs;
 import net.fit.cobblemonpokeboxes.item.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.neoforged.neoforge.common.CreativeModeTabRegistry;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class ModLangProvider extends LanguageProvider {
@@ -41,7 +37,7 @@ public class ModLangProvider extends LanguageProvider {
         this.add(ModItems.REGISTONE.get(), "Registone");
         this.add(ModItems.BACKPACK_UPGRADER.get(), "Backpack Upgrader");
         this.add(ModBlocks.POKE_GEM_ORE.get(), "Poke Gem Ore");
-        this.add(ModBlocks.POKE_GEM_DEEPSLATE_ORE.get(), "Deepslate Poke Gem Ore");
+        this.add(ModBlocks.DEEPSLATE_POKE_GEM_ORE.get(), "Deepslate Poke Gem Ore");
 
 
         //Debugging tooltip translations

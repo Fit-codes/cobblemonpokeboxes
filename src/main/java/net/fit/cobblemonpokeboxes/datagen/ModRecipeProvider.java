@@ -21,7 +21,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> POKE_GEM_SMELTABLES = List.of(ModItems.POKE_GEM_DUST,
-                ModBlocks.POKE_GEM_ORE, ModBlocks.POKE_GEM_DEEPSLATE_ORE);
+                ModBlocks.POKE_GEM_ORE, ModBlocks.DEEPSLATE_POKE_GEM_ORE);
 //
 //        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POKE_JEWEL.get())
 //                .pattern("BBB")
