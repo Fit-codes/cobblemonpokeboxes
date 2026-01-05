@@ -29,6 +29,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.POKEMON_COSMETIC_POKEBOX);
                         output.accept(ModItems.POKEDOLL_POKEBOX);
                         output.accept(ModItems.PLUSHIE_BOX);
+                        output.accept(ModItems.POKEROCK_POKEBOX);
+                        output.accept(ModItems.BATTLE_ITEM_POKEBOX);
+                        output.accept(ModItems.DIVEBALL_POKEBOX);
+                        output.accept(ModItems.NETHER_BOX);
+                        output.accept(ModItems.CLOTHING_SCRAP);
 
                         output.accept(ModItems.ORIGIN_STONE);
                         output.accept(ModItems.POKE_ESSENCE);

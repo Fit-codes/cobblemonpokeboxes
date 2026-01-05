@@ -1,6 +1,6 @@
 {
-  "name": "Simple Hats Box",
-  "item_id": "simple_hats_box",
+  "name": "Cosmetic Box",
+  "item_id": "cosmetic_box",
   "tiers": [
     {
       "weight": 500,

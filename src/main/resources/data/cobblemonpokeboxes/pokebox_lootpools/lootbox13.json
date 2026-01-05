@@ -1,0 +1,74 @@
+{
+  "name": "Diveball Pokebox",
+  "item_id": "diveball_pokebox",
+  "tiers": [
+    {
+      "weight": 0,
+      "color": "none",
+      "items": [
+
+      ]
+    },
+    {
+      "weight": 0,
+      "color": "green",
+      "items": [
+       
+      ]
+    },
+    {
+      "weight": 0,
+      "color": "blue",
+      "items": [
+
+      ]
+    },
+    {
+      "weight": 65,
+      "color": "purple",
+      "items": [
+        {"item": "cobblemon:ancient_great_rod", "count": 1},
+        {"item": "cobblemon:ultra_rod", "count": 1},
+        {"item": "cobblemon:quick_rod", "count": 1},
+        {"item": "cobblemon:dusk_rod", "count": 1},
+        {"item": "cobblemon:net_rod", "count": 1},
+        {"item": "cobblemon:dive_rod", "count": 1},
+        {"item": "cobblemon:nest_rod", "count": 1},
+        {"item": "cobblemon:repeat_rod", "count": 1},
+        {"item": "cobblemon:timer_rod", "count": 1},
+        {"item": "cobblemon:luxury_rod", "count": 1},
+        {"item": "cobblemon:great_rod", "count": 1}
+      ]
+    },
+    {
+      "weight": 32,
+      "color": "red",
+      "items": [
+        {"item": "cobblemon:ancient_ultra_rod", "count": 1},
+        {"item": "cobblemon:ancient_jet_rod", "count": 1},
+        {"item": "cobblemon:ancient_leaden_rod", "count": 1},
+        {"item": "cobblemon:ancient_gigaton_rod", "count": 1},
+        {"item": "cobblemon:ancient_wing_rod", "count": 1},
+        {"item": "cobblemon:fast_rod", "count": 1},
+        {"item": "cobblemon:level_rod", "count": 1},
+        {"item": "cobblemon:lure_rod", "count": 1},
+        {"item": "cobblemon:heavy_rod", "count": 1},
+        {"item": "cobblemon:love_rod", "count": 1},
+        {"item": "cobblemon:friend_rod", "count": 1},
+        {"item": "cobblemon:moon_rod", "count": 1},
+        {"item": "cobblemon:park_rod", "count": 1},
+        {"item": "cobblemon:safari_rod", "count": 1},
+        {"item": "cobblemon:sport_rod", "count": 1}
+      ]
+    },
+    {
+      "weight": 3,
+      "color": "yellow",
+      "items": [
+        {"item": "cobblemon:beast_rod", "count": 1},
+        {"item": "cobblemon:dream_rod", "count": 1},
+        {"item": "cobblemon:premier_rod", "count": 1}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "name": "Pokemon Cosmetics Pokebox",
-  "item_id": "pokemon_cosmetic_pokebox",
+  "name": "Simple Hats Box",
+  "item_id": "simple_hats_box",
   "tiers": [
     {
       "weight": 500,

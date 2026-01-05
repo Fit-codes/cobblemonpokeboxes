@@ -32,6 +32,16 @@ public class ModItems {
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 9)));
     public static final DeferredItem<Item> PLUSHIE_BOX = ITEMS.register("plushie_box",
             () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 10)));
+    public static final DeferredItem<Item> POKEROCK_POKEBOX = ITEMS.register("pokerock_pokebox",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 11)));
+    public static final DeferredItem<Item> BATTLE_ITEM_POKEBOX = ITEMS.register("battle_item_pokebox",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 12)));
+    public static final DeferredItem<Item> DIVEBALL_POKEBOX = ITEMS.register("diveball_pokebox",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 13)));
+    public static final DeferredItem<Item> NETHER_BOX = ITEMS.register("nether_box",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 14)));
+    public static final DeferredItem<Item> CLOTHING_SCRAP = ITEMS.register("clothing_scrap",
+            () -> new PokeballPokebox(new Item.Properties().component(POKEBOXLOOTPOOL, 15)));
 
 
     //Pokegem registeries

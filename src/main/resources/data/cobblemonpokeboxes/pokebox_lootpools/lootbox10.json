@@ -1,6 +1,6 @@
 {
-  "name": "Pokeball Pokebox",
-  "item_id": "pokeball_lootbox",
+  "name": "Plushie Box",
+  "item_id": "plushie_box",
   "tiers": [
     {
       "weight": 130,

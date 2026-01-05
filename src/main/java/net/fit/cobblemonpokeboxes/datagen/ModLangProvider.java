@@ -25,8 +25,11 @@ public class ModLangProvider extends LanguageProvider {
         this.add(ModItems.POKEMON_COSMETIC_POKEBOX.get(), "Pokemon Cosmetic Pokebox");
         this.add(ModItems.POKEDOLL_POKEBOX.get(), "Pokedoll Pokebox");
         this.add(ModItems.PLUSHIE_BOX.get(), "Plushie Box");
-
-
+        this.add(ModItems.POKEROCK_POKEBOX.get(), "Pokerock Pokebox");
+        this.add(ModItems.BATTLE_ITEM_POKEBOX.get(), "Battle Item Pokebox");
+        this.add(ModItems.DIVEBALL_POKEBOX.get(), "Diveball Pokebox");
+        this.add(ModItems.NETHER_BOX.get(), "Nether Box");
+        this.add(ModItems.CLOTHING_SCRAP.get(), "Clothing Scrap");
 
         this.add(ModItems.ORIGIN_STONE.get(), "Origin Stone");
         this.add(ModItems.POKE_ESSENCE.get(), "Poke Essence");

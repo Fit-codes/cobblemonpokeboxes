@@ -11,6 +11,7 @@ import oshi.util.tuples.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Datapack-compatible version of PokeboxLootpool.
@@ -115,26 +116,34 @@ public class PokeboxLootpool {
         }
     }
 
+    public int getMaxWeight() {
+        for (int i = weightrange.size(); i != 0; i--) {
+            if (!(weightrange.get(i - 1).getB() == 0)) {
+                return weightrange.get(i - 1).getB();
+            }
+        }
+        return 0;
+    }
+
     public RewardRoll rollReward() {
         int rolleditemindex = 0;
         int rolledtier = 0;
-
-        for (int i = weightrange.size(); !(i == 0); i--) {
-            if (!(weightrange.get(i - 1).getB() == 0)) {
-                int rollednum = ((int) ((Math.random() * (weightrange.get(i - 1).getB()))) + 1);
-                System.out.println("[Pokebox Roll] Random number: " + rollednum + " (out of " + weightrange.get(i - 1).getB() + ")");
-                for (int x = 0; x < weightrange.size(); x++) {
-                    if (rollednum <= weightrange.get(x).getB()) {
-                        rolledtier = x + 1;
-                        break;
-                    }
-                }
+        int maxWeight = getMaxWeight();
+        int rolledNum = ThreadLocalRandom.current().nextInt(1, maxWeight + 1);
+        System.out.println("[Pokebox Roll] Random number: " + rolledNum + " (out of " + maxWeight + ")");
+        for (int tier = 0; tier < weightrange.size(); tier++) {
+            Pair<Integer, Integer> range = weightrange.get(tier);
+            if (range.getA() == 0) {
+                continue;
+            }
+            if (rolledNum >= range.getA() && rolledNum <= range.getB()) {
+                rolledtier = tier + 1;
                 break;
             }
         }
 
         System.out.println("[Pokebox Roll] Selected Tier " + rolledtier + " (" + color.get(rolledtier - 1) + ")");
-        rolleditemindex = (int) (Math.random() * (lootpool.get(rolledtier - 1).size()));
+        rolleditemindex = ThreadLocalRandom.current().nextInt(0, lootpool.get(rolledtier - 1).size());
 
         // Return the reward information directly instead of storing in itemstack
         Item rewardItem = getReward(rolledtier, rolleditemindex);

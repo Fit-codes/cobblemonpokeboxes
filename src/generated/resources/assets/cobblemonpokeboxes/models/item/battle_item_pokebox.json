@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemonpokeboxes:item/battle_item_pokebox"
+  }
+}
