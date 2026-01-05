@@ -24,6 +24,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.POKEMON_COSMETIC_POKEBOX.get());
         basicItem(ModItems.POKEDOLL_POKEBOX.get());
         basicItem(ModItems.PLUSHIE_BOX.get());
+        basicItem(ModItems.POKEROCK_POKEBOX.get());
+        basicItem(ModItems.BATTLE_ITEM_POKEBOX.get());
+        basicItem(ModItems.DIVEBALL_POKEBOX.get());
+        basicItem(ModItems.NETHER_BOX.get());
+        basicItem(ModItems.CLOTHING_SCRAP.get());
 
         basicItem(ModItems.ORIGIN_STONE.get());
         basicItem(ModItems.POKE_ESSENCE.get());

@@ -1,6 +1,6 @@
 {
-  "name": "Cosmetic Box",
-  "item_id": "cosmetic_box",
+  "name": "Miners and Crafters Box",
+  "item_id": "miners_and_crafters_box",
   "tiers": [
     {
       "weight": 500,

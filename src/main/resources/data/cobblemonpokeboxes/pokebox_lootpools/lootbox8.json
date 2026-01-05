@@ -1,6 +1,6 @@
 {
-  "name": "Pokedoll Pokebox",
-  "item_id": "pokedoll_pokebox",
+  "name": "Pokemon Cosmetics Pokebox",
+  "item_id": "pokemon_cosmetic_pokebox",
   "tiers": [
     {
       "weight": 500,

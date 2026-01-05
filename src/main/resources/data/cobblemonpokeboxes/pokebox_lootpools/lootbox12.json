@@ -1,0 +1,133 @@
+{
+  "name": "Battle Item Pokebox",
+  "item_id": "battle_item_pokebox",
+  "tiers": [
+    {
+      "weight": 0,
+      "color": "none",
+      "items": [
+        
+      ]
+    },
+    {
+      "weight": 0,
+      "color": "green",
+      "items": [
+        
+      ]
+    },
+    {
+      "weight": 11,
+      "color": "blue",
+      "items": [
+        {"item": "cobblemon:absorb_bulb", "count": 1},
+        {"item": "cobblemon:binding_band", "count": 1},
+        {"item": "cobblemon:black_belt", "count": 1},
+        {"item": "cobblemon:black_glasses", "count": 1},
+        {"item": "cobblemon:black_sludge", "count": 1},
+        {"item": "cobblemon:bright_powder", "count": 1},
+        {"item": "cobblemon:charcoal_stick", "count": 1},
+        {"item": "cobblemon:dragon_fang", "count": 1},
+        {"item": "cobblemon:fairy_feather", "count": 1},
+        {"item": "cobblemon:float_stone", "count": 1},
+        {"item": "cobblemon:hard_stone", "count": 1},
+        {"item": "cobblemon:iron_ball", "count": 1},
+        {"item": "cobblemon:kings_rock", "count": 1},
+        {"item": "cobblemon:light_clay", "count": 1},
+        {"item": "cobblemon:magnet", "count": 1},
+        {"item": "cobblemon:metal_coat", "count": 1},
+        {"item": "cobblemon:metal_powder", "count": 1},
+        {"item": "cobblemon:metronome", "count": 1},
+        {"item": "cobblemon:miracle_seed", "count": 1},
+        {"item": "cobblemon:mystic_water", "count": 1},
+        {"item": "cobblemon:never_melt_ice", "count": 1},
+        {"item": "cobblemon:poison_barb", "count": 1},
+        {"item": "cobblemon:protective_pads", "count": 1},
+        {"item": "cobblemon:punching_glove", "count": 1},
+        {"item": "cobblemon:quick_claw", "count": 1},
+        {"item": "cobblemon:quick_powder", "count": 1},
+        {"item": "cobblemon:razor_claw", "count": 1},
+        {"item": "cobblemon:razor_fang", "count": 1},
+        {"item": "cobblemon:scope_lens", "count": 1},
+        {"item": "cobblemon:sharp_beak", "count": 1},
+        {"item": "cobblemon:shed_shell", "count": 1},
+        {"item": "cobblemon:silk_scarf", "count": 1},
+        {"item": "cobblemon:silver_powder", "count": 1},
+        {"item": "cobblemon:soft_sand", "count": 1},
+        {"item": "cobblemon:spell_tag", "count": 1},
+        {"item": "cobblemon:twisted_spoon", "count": 1},
+        {"item": "cobblemon:utility_umbrella", "count": 1},
+        {"item": "cobblemon:wide_lens", "count": 1},
+        {"item": "cobblemon:wise_glasses", "count": 1},
+        {"item": "cobblemon:zoom_lens", "count": 1},
+        {"item": "cobblemon:electric_seed", "count": 1},
+        {"item": "cobblemon:grassy_seed", "count": 1},
+        {"item": "cobblemon:misty_seed", "count": 1},
+        {"item": "cobblemon:psychic_seed", "count": 1}
+      ]
+    },
+    {
+      "weight": 5,
+      "color": "purple",
+      "items": [
+        {"item": "cobblemon:ability_shield", "count": 1},
+        {"item": "cobblemon:blunder_policy", "count": 1},
+        {"item": "cobblemon:cell_battery", "count": 1},
+        {"item": "cobblemon:covert_cloak", "count": 1},
+        {"item": "cobblemon:damp_rock", "count": 1},
+        {"item": "cobblemon:eject_button", "count": 1},
+        {"item": "cobblemon:eject_pack", "count": 1},
+        {"item": "cobblemon:eviolite", "count": 1},
+        {"item": "cobblemon:expert_belt", "count": 1},
+        {"item": "cobblemon:flame_orb", "count": 1},
+        {"item": "cobblemon:heat_rock", "count": 1},
+        {"item": "cobblemon:heavy_duty_boots", "count": 1},
+        {"item": "cobblemon:icy_rock", "count": 1},
+        {"item": "cobblemon:light_ball", "count": 1},
+        {"item": "cobblemon:loaded_dice", "count": 1},
+        {"item": "cobblemon:muscle_band", "count": 1},
+        {"item": "cobblemon:red_card", "count": 1},
+        {"item": "cobblemon:ring_target", "count": 1},
+        {"item": "cobblemon:room_service", "count": 1},
+        {"item": "cobblemon:safety_goggles", "count": 1},
+        {"item": "cobblemon:shell_bell", "count": 1},
+        {"item": "cobblemon:smooth_rock", "count": 1},
+        {"item": "cobblemon:soothe_bell", "count": 1},
+        {"item": "cobblemon:sticky_barb", "count": 1},
+        {"item": "cobblemon:terrain_extender", "count": 1},
+        {"item": "cobblemon:throat_spray", "count": 1},
+        {"item": "cobblemon:toxic_orb", "count": 1},
+        {"item": "cobblemon:weakness_policy", "count": 1},
+        {"item": "cobblemon:focus_band", "count": 1},
+        {"item": "cobblemon:link_cable", "count": 1}
+      ]
+    },
+    {
+      "weight": 2,
+      "color": "red",
+      "items": [
+        {"item": "cobblemon:assault_vest", "count": 1},
+        {"item": "cobblemon:rocky_helmet", "count": 1},
+        {"item": "cobblemon:choice_band", "count": 1},
+        {"item": "cobblemon:choice_scarf", "count": 1},
+        {"item": "cobblemon:choice_specs", "count": 1},
+        {"item": "cobblemon:focus_sash", "count": 1},
+        {"item": "cobblemon:leftovers", "count": 1},
+        {"item": "cobblemon:life_orb", "count": 1},
+        {"item": "cobblemon:air_balloon", "count": 1}
+      ]
+    },
+    {
+      "weight": 1,
+      "color": "yellow",
+      "items": [
+        {"item": "cobblemon:power_anklet", "count": 1},
+        {"item": "cobblemon:power_bracer", "count": 1},
+        {"item": "cobblemon:power_belt", "count": 1},
+        {"item": "cobblemon:power_lens", "count": 1},
+        {"item": "cobblemon:power_band", "count": 1},
+        {"item": "cobblemon:power_weight", "count": 1}
+      ]
+    }
+  ]
+}
