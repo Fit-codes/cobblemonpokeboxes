@@ -1,6 +1,7 @@
 {
   "name": "Masterball Pokebox",
   "item_id": "masterball_lootbox",
+  "lucky_tiers": ["red", "yellow"],
   "tiers": [
     {
       "weight": 0,

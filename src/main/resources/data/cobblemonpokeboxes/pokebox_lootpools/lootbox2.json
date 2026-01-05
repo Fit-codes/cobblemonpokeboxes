@@ -1,6 +1,7 @@
 {
   "name": "Greatball Pokebox",
   "item_id": "greatball_lootbox",
+  "lucky_tiers": ["red", "yellow"],
   "tiers": [
     {
       "weight": 0,

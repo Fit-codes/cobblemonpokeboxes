@@ -1,6 +1,7 @@
 {
   "name": "Pokeball Pokebox",
   "item_id": "pokeball_lootbox",
+  "lucky_tiers": ["red", "yellow"],
   "tiers": [
     {
       "weight": 1200,

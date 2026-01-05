@@ -1,6 +1,7 @@
 {
   "name": "Diveball Pokebox",
   "item_id": "diveball_pokebox",
+  "lucky_tiers": ["yellow"],
   "tiers": [
     {
       "weight": 0,

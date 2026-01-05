@@ -1,6 +1,7 @@
 {
   "name": "Battle Item Pokebox",
   "item_id": "battle_item_pokebox",
+  "lucky_tiers": ["red", "yellow"],
   "tiers": [
     {
       "weight": 0,
