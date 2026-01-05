@@ -1,12 +1,15 @@
 package net.fit.cobblemonpokeboxes.item.custom;
 
 import net.fit.cobblemonpokeboxes.component.ModComponentTypes;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -63,14 +66,43 @@ public class PokeballPokebox extends Item {
             //Consume the pokebox item AFTER we have the reward data
             itemstack.consume(1, player);
 
-            // Send chat message with tier color
-            net.minecraft.network.chat.MutableComponent message = Component.literal("Opened ")
-                .append(Component.literal(lootpool.name).withStyle(net.minecraft.ChatFormatting.GOLD))
-                .append(Component.literal(" and received "))
-                .append(Component.translatable(reward.item.getDescriptionId()).withStyle(getTierChatColor(reward.tierColor)))
-                .append(Component.literal(" x" + reward.amount).withStyle(getTierChatColor(reward.tierColor)));
+            ChatFormatting tierColor = getTierChatColor(reward.tierColor);
 
-            player.sendSystemMessage(message);
+            if (reward.isLuckyDrop) {
+                // Lucky drop - broadcast to all players on the server
+                MutableComponent luckyMessage = Component.literal("LUCKY DROP! ")
+                    .withStyle(tierColor, ChatFormatting.BOLD)
+                    .append(Component.literal(player.getName().getString())
+                        .withStyle(ChatFormatting.WHITE, ChatFormatting.BOLD))
+                    .append(Component.literal(" pulled a ")
+                        .withStyle(ChatFormatting.WHITE))
+                    .append(Component.translatable(reward.item.getDescriptionId())
+                        .withStyle(tierColor, ChatFormatting.BOLD))
+                    .append(Component.literal(" x" + reward.amount)
+                        .withStyle(tierColor, ChatFormatting.BOLD))
+                    .append(Component.literal(" from a ")
+                        .withStyle(ChatFormatting.WHITE))
+                    .append(Component.literal(lootpool.name)
+                        .withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD))
+                    .append(Component.literal("!")
+                        .withStyle(ChatFormatting.WHITE));
+
+                // Broadcast to all players on the server
+                if (level.getServer() != null) {
+                    for (ServerPlayer serverPlayer : level.getServer().getPlayerList().getPlayers()) {
+                        serverPlayer.sendSystemMessage(luckyMessage);
+                    }
+                }
+            } else {
+                // Regular drop - send only to the player who opened the box
+                MutableComponent message = Component.literal("Opened ")
+                    .append(Component.literal(lootpool.name).withStyle(ChatFormatting.YELLOW))
+                    .append(Component.literal(" and received "))
+                    .append(Component.translatable(reward.item.getDescriptionId()).withStyle(tierColor))
+                    .append(Component.literal(" x" + reward.amount).withStyle(tierColor));
+
+                player.sendSystemMessage(message);
+            }
 
             //Give the player the reward item
             ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(reward.item, reward.amount));
@@ -96,15 +128,15 @@ public class PokeballPokebox extends Item {
         super.appendHoverText(itemstack, context, tooltipComponents, tooltipFlag);
     }
 
-    private net.minecraft.ChatFormatting getTierChatColor(String tierColor) {
+    private ChatFormatting getTierChatColor(String tierColor) {
         return switch (tierColor.toLowerCase()) {
-            case "green" -> net.minecraft.ChatFormatting.GREEN;
-            case "blue" -> net.minecraft.ChatFormatting.BLUE;
-            case "purple" -> net.minecraft.ChatFormatting.LIGHT_PURPLE;
-            case "red" -> net.minecraft.ChatFormatting.RED;
-            case "yellow" -> net.minecraft.ChatFormatting.YELLOW;
-            case "gold" -> net.minecraft.ChatFormatting.GOLD;
-            default -> net.minecraft.ChatFormatting.GRAY; // "none" or unknown
+            case "green" -> ChatFormatting.GREEN;
+            case "blue" -> ChatFormatting.BLUE; // Darker blue
+            case "purple" -> ChatFormatting.LIGHT_PURPLE;
+            case "red" -> ChatFormatting.RED;
+            case "yellow" -> ChatFormatting.GOLD; // Changed from YELLOW to GOLD for a richer color
+            case "gold" -> ChatFormatting.GOLD;
+            default -> ChatFormatting.GRAY; // "none" or unknown
         };
     }
 }

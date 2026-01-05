@@ -3,6 +3,7 @@ package net.fit.cobblemonpokeboxes.loot;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,13 +13,15 @@ import java.util.List;
 public record PokeboxLootpoolData(
         String name,
         String itemId,
-        List<LootTier> tiers
+        List<LootTier> tiers,
+        List<String> luckyTiers
 ) {
     public static final Codec<PokeboxLootpoolData> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.STRING.fieldOf("name").forGetter(PokeboxLootpoolData::name),
                     Codec.STRING.fieldOf("item_id").forGetter(PokeboxLootpoolData::itemId),
-                    LootTier.CODEC.listOf().fieldOf("tiers").forGetter(PokeboxLootpoolData::tiers)
+                    LootTier.CODEC.listOf().fieldOf("tiers").forGetter(PokeboxLootpoolData::tiers),
+                    Codec.STRING.listOf().optionalFieldOf("lucky_tiers", new ArrayList<>()).forGetter(PokeboxLootpoolData::luckyTiers)
             ).apply(instance, PokeboxLootpoolData::new)
     );
 
