@@ -22,6 +22,7 @@ public class PokeboxLootpool {
     List<Pair<Integer, Integer>> weightrange;
     List<String> color;
     List<ArrayList<Pair<Item, Integer>>> lootpool;
+    List<String> luckyTierColors;
 
     public PokeboxLootpool(int lootpoolnumber) {
         // Load from datapack instead of config
@@ -35,6 +36,7 @@ public class PokeboxLootpool {
             weightrange = new ArrayList<>();
             color = new ArrayList<>();
             lootpool = new ArrayList<>();
+            luckyTierColors = new ArrayList<>();
             for (int i = 0; i < 6; i++) {
                 weightrange.add(new Pair<>(0, 0));
                 color.add("none");
@@ -48,6 +50,7 @@ public class PokeboxLootpool {
         weightrange = new ArrayList<>();
         color = new ArrayList<>();
         lootpool = new ArrayList<>();
+        luckyTierColors = data.luckyTiers();
 
         int cumulativeWeight = 0;
 
@@ -105,13 +108,15 @@ public class PokeboxLootpool {
         public final Item item;
         public final int amount;
         public final String tierColor;
+        public final boolean isLuckyDrop;
 
-        public RewardRoll(int tier, int itemIndex, Item item, int amount, String tierColor) {
+        public RewardRoll(int tier, int itemIndex, Item item, int amount, String tierColor, boolean isLuckyDrop) {
             this.tier = tier;
             this.itemIndex = itemIndex;
             this.item = item;
             this.amount = amount;
             this.tierColor = tierColor;
+            this.isLuckyDrop = isLuckyDrop;
         }
     }
 
@@ -140,10 +145,13 @@ public class PokeboxLootpool {
         Item rewardItem = getReward(rolledtier, rolleditemindex);
         int amount = getAmount(rolledtier, rolleditemindex);
         String tierColor = getTierColor(rolledtier);
+        // Check if this tier's color is in the lucky tiers list (case-insensitive)
+        boolean isLucky = luckyTierColors.stream()
+            .anyMatch(luckyColor -> luckyColor.equalsIgnoreCase(tierColor));
 
-        System.out.println("[Pokebox Roll] Rolled: " + rewardItem.getDescriptionId() + " x" + amount + " (Tier " + rolledtier + ")");
+        System.out.println("[Pokebox Roll] Rolled: " + rewardItem.getDescriptionId() + " x" + amount + " (Tier " + rolledtier + ", Color: " + tierColor + ")" + (isLucky ? " - LUCKY DROP!" : ""));
 
-        return new RewardRoll(rolledtier, rolleditemindex, rewardItem, amount, tierColor);
+        return new RewardRoll(rolledtier, rolleditemindex, rewardItem, amount, tierColor, isLucky);
     }
 
     public Item getReward(int tier, int itemindex) {
